@@ -1,9 +1,14 @@
+*{
+    box-sizing:border-box;
+}
+
 body{
     margin:0;
     background:#d3cccc;
-    font-family:Cambria, Cochin, Georgia, Times, serif;
+  
 }
 
+/* HEADER */
 header{
     text-align:center;
     padding:20px;
@@ -11,19 +16,21 @@ header{
     font-size:24px;
 }
 
+/* MAIN WRAPPER */
 main{
     width:100%;
     padding:20px;
     box-sizing:border-box;
 }
 
+/* GRID ROW */
 .row{
     display:grid;
-    grid-template-columns:repeat(3, 1fr);
+    grid-template-columns:repeat(4, 1fr); /* desktop */
     gap:15px;
-    margin-bottom:25px;
 }
 
+/* CARD */
 .card{
     background:white;
     border-radius:12px;
@@ -43,32 +50,42 @@ main{
     margin:10px 0 0;
 }
 
-/* Tablet */
+/* TABLET */
 @media (max-width:900px){
     .row{
         grid-template-columns:repeat(3, 1fr);
-        gap:10px;
+    }
+
+    .card img{
+        height:200px;
+    }
+}
+
+/* MOBILE */
+@media (max-width:600px){
+
+    main{
+        padding:10px;
+    }
+    .row{
+        grid-template-columns:repeat(2, 1fr); /* 2 columns mobile */
+        gap:12px;
+    }
+
+    .card{
+        padding:8px;
     }
 
     .card img{
         height:160px;
     }
-}
 
-/* Mobile */
-@media (max-width:600px){
-    .row{
-        grid-template-columns:repeat(2, 1fr);
+    .card h3{
+        font-size:18px;
     }
 
-    .card img{
-        height:140px;
-    }
-}
-
-/* Very Small Mobile */
-@media (max-width:400px){
-    .row{
-        grid-template-columns:1fr;
+    header{
+        font-size:28px;
+        padding:20px 10px;
     }
 }
