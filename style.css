@@ -1,0 +1,235 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Courier New', monospace;
+}
+
+html,body{
+    width:100%;
+    overflow-x:hidden;
+}
+
+/* Header */
+
+/* header{
+    background-color:rgb(60, 51, 86);
+    padding:10px;
+    text-align:center;
+}
+
+header p{
+    padding:5px;
+} */
+
+header{
+    background-color: rgb(60, 51, 86);
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 15px 10px;
+}
+
+
+header i{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+
+
+
+
+
+/* Main */
+
+main{
+    background-image:url("https://img.magnific.com/free-vector/topographic-map-background_52683-41984.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    padding:20px;
+
+    border-bottom:2px solid black;
+}
+
+/* Search Box */
+
+.search-box{
+    width:100%;
+    max-width:1000px;
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    margin-top:10px;
+}
+
+input{
+    flex:1;
+    min-width:0;
+
+    height:40px;
+    padding-left:15px;
+
+    border:2px solid gray;
+    border-radius:15px;
+
+    background-color:whitesmoke;
+}
+
+input:hover{
+    border:2px solid black;
+    background-color:rgb(221,197,197);
+}
+
+button{
+    width:90px;
+    height:40px;
+
+    border-radius:10px;
+    border:1px solid black;
+
+    background-color:beige;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color:rgb(173,155,155);
+}
+
+/* Select */
+
+select{
+    width:250px;
+    margin-top:20px;
+
+    align-self:flex-start;
+
+    background-color:rgb(168,161,161);
+}
+
+select:hover{
+    border:2px solid black;
+    background-color:rgb(221,197,197);
+}
+
+/* Content */
+
+h1{
+    text-align:center;
+    padding-top:30px;
+    margin-bottom:15px;
+}
+
+p{
+    font-size:17px;
+    font-weight:700;
+    line-height:1.6;
+    padding:10px;
+    text-align:center;
+    max-width:800px;
+}
+
+/* Explore Button */
+
+#chan2{
+    width:140px;
+    height:40px;
+
+    margin-top:15px;
+
+    font-size:12px;
+    font-weight:bold;
+
+    background-color:rgb(164,160,150);
+}
+
+#chan2:hover{
+    background-color:rgb(67,64,64);
+    color:white;
+}
+
+/* Footer */
+
+footer{
+    background-color:rgb(112,109,126);
+
+    width:100%;
+
+    padding:20px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+
+    text-align:center;
+}
+
+footer ul{
+    padding-left:20px;
+}
+
+/* Tablet */
+
+@media (max-width:768px){
+
+    h1{
+        font-size:32px;
+    }
+
+    p{
+        font-size:15px;
+    }
+
+    select{
+        width:220px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width:480px){
+
+    .search-box{
+        width:100%;
+        gap:5px;
+    }
+
+    input{
+        flex:1;
+    }
+
+    button{
+        width:80px;
+        flex-shrink:0;
+    }
+
+    select{
+        width:200px;
+    }
+
+    h1{
+        font-size:24px;
+    }
+
+    p{
+        font-size:14px;
+        line-height:1.5;
+    }
+
+    #chan2{
+        width:130px;
+    }
+}
