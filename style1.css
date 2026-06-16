@@ -9,10 +9,19 @@
 body {
     font-family: Arial, sans-serif;
     background: #9c8585;
+
+     padding-top: 90px;
 }
 
 /* Header */
 header {
+     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+
+
     text-align: center;
     padding: 20px;
     font-size: 18px;
@@ -68,10 +77,6 @@ header {
 
 /* Mobile */
 @media (max-width: 600px) {
-
-    /* body {
-        background: red;
-    } */
 
     .container {
         grid-template-columns:1fr ;/* IMPORTANT */
